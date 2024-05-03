@@ -26,6 +26,7 @@ const liveView = document.getElementById('liveView');
 const demosSection = document.getElementById('demos');
 const enableWebcamButton = document.getElementById('webcamButton');
 
+
 // Check if webcam access is supported.
 function getUserMediaSupported() {
     return !!(navigator.mediaDevices &&
@@ -35,12 +36,15 @@ function getUserMediaSupported() {
   // If webcam supported, add event listener to button for when user
   // wants to activate it to call enableCam function which we will 
   // define in the next step.
+
+
   if (getUserMediaSupported()) {
     enableWebcamButton.addEventListener('click', enableCam);
   } else {
     console.warn('getUserMedia() is not supported by your browser');
   }
-  
+
+
   
 // Enable the live webcam view and start classification.
   function enableCam(event) {
@@ -51,7 +55,8 @@ function getUserMediaSupported() {
     }
     
     // Hide the button once clicked.
-    event.target.classList.add('removed');  
+    //event.target.classList.add('removed');  
+    event.target.classList.p("Cerrar")
     
     // getUsermedia parameters to force video but not audio.
     const constraints = {

@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="style.css">
   </head>  
   <body>
-    <h1>Multiple object detection using pre trained model in TensorFlow.js</h1>
+    <h1>Deteccion de objetos</h1>
 
-    <p>Wait for the model to load before clicking the button to enable the webcam - at which point it will become visible to use.</p>
+    <!--<p>Wait for the model to load before clicking the button to enable the webcam - at which point it will become visible to use.</p>-->
     
     <section id="demos" class="invisible">
 
-      <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+      <!--<p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>-->
       
+      <div class="container_grid">
+        <div class="counter">
+          <p>Personas en camara</p>
+          <h1 id="value">0</h1>
+        </div>
+        <div class="counter">
+          <p>Contador de personas</p>
+          <h1 id="value2">0</h1>
+        </div>
+      </div>
+
+
+
+
       <div id="liveView" class="camView">
-        <button id="webcamButton">Enable Webcam</button>
         <video id="webcam" autoplay muted width="640" height="480"></video>
+        <button id="webcamButton">Enable Webcam</button>
       </div>
     </section>
 
