@@ -56,7 +56,7 @@ function getUserMediaSupported() {
     
     // Hide the button once clicked.
     //event.target.classList.add('removed');  
-    event.target.classList.p("Cerrar")
+    
     
     // getUsermedia parameters to force video but not audio.
     const constraints = {
